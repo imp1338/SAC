@@ -328,10 +328,10 @@ DeviceIoControl(hDevice, IOCTL_GET_TELEMETRY, NULL, 0, outTelemetryBuf, telemetr
 
  # Credits
 
- Big Inspiration from : https://github.com/lauralex/OAC
- Other Inspiration:
- https://tomchothia.gitlab.io/Papers/AntiCheat2024.pdf
- https://arxiv.org/pdf/2408.00500
+ * Big Inspiration from : https://github.com/lauralex/OAC
+ * `Other Inspiration:`
+ * https://tomchothia.gitlab.io/Papers/AntiCheat2024.pdf
+ * https://arxiv.org/pdf/2408.00500
 
 # Final notes & disclaimers
 
