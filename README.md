@@ -22,6 +22,7 @@ This README documents architecture, build & run instructions, IOCTLs and data st
 8. [Examples: usermode client & injection tester](#examples-usermode-client--injection-tester)
 9. [Troubleshooting](#troubleshooting)
 10. [Extending SAC (developer notes)](#extending-sac-developer-notes)
+11. [Credits](#credits)
 
 ---
 
@@ -324,6 +325,13 @@ DeviceIoControl(hDevice, IOCTL_GET_TELEMETRY, NULL, 0, outTelemetryBuf, telemetr
 * **IRQL safety**: many Windows kernel APIs are IRQL-sensitive. The scan thread checks for `PASSIVE_LEVEL` where appropriate — preserve that behavior for operations that call pageable code.
 
 ---
+
+ # Credits
+
+ Big Inspiration from : https://github.com/lauralex/OAC
+ Other Inspiration:
+ https://tomchothia.gitlab.io/Papers/AntiCheat2024.pdf
+ https://arxiv.org/pdf/2408.00500
 
 # Final notes & disclaimers
 
