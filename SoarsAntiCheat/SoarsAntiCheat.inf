@@ -1,0 +1,62 @@
+;
+; SoarsAntiCheat.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System ; TODO: specify appropriate Class
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider    = %ManufacturerName%
+CatalogFile = SoarsAntiCheat.cat
+DriverVer   = ; TODO: set DriverVer in stampinf property pages
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SoarsAntiCheat.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard,NT$ARCH$.10.0...16299 ; %13% support introduced in build 16299
+
+[Standard.NT$ARCH$.10.0...16299]
+%SoarsAntiCheat.DeviceDesc% = SoarsAntiCheat_Device, Root\SoarsAntiCheat ; TODO: edit hw-id
+
+[SoarsAntiCheat_Device.NT]
+CopyFiles = File_Copy
+
+[File_Copy]
+SoarsAntiCheat.sys
+
+;-------------- Service installation
+[SoarsAntiCheat_Device.NT.Services]
+AddService = SoarsAntiCheat,%SPSVCINST_ASSOCSERVICE%, SoarsAntiCheat_Service_Inst
+
+; -------------- SoarsAntiCheat driver install sections
+[SoarsAntiCheat_Service_Inst]
+DisplayName    = %SoarsAntiCheat.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SoarsAntiCheat.sys
+
+[SoarsAntiCheat_Device.NT.Wdf]
+KmdfService = SoarsAntiCheat, SoarsAntiCheat_wdfsect
+
+[SoarsAntiCheat_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName = "<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "SoarsAntiCheat Installation Disk"
+SoarsAntiCheat.DeviceDesc = "SoarsAntiCheat Device"
+SoarsAntiCheat.SVCDESC = "SoarsAntiCheat Service"

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoarsAntiCheat", "SoarsAntiCheat\SoarsAntiCheat.vcxproj", "{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoarsAntiCheatUM", "SoarsAntiCheatUM\SoarsAntiCheatUM.vcxproj", "{31D5EA45-5D50-4338-A4F5-76EDAF273A75}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SACTester", "SACTester\SACTester.vcxproj", "{A4A3A123-E652-42D5-A5D4-0DD21D777297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Debug|ARM64.Build.0 = Debug|ARM64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Debug|x64.ActiveCfg = Debug|x64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Debug|x64.Build.0 = Debug|x64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Debug|x64.Deploy.0 = Debug|x64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Release|ARM64.ActiveCfg = Release|ARM64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Release|ARM64.Build.0 = Release|ARM64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Release|ARM64.Deploy.0 = Release|ARM64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Release|x64.ActiveCfg = Release|x64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Release|x64.Build.0 = Release|x64
+		{DF66D3FB-A9FD-3316-E139-4F5A763BC95F}.Release|x64.Deploy.0 = Release|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Debug|ARM64.ActiveCfg = Debug|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Debug|ARM64.Build.0 = Debug|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Debug|x64.ActiveCfg = Debug|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Debug|x64.Build.0 = Debug|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Release|ARM64.ActiveCfg = Release|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Release|ARM64.Build.0 = Release|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Release|x64.ActiveCfg = Release|x64
+		{31D5EA45-5D50-4338-A4F5-76EDAF273A75}.Release|x64.Build.0 = Release|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Debug|ARM64.ActiveCfg = Debug|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Debug|ARM64.Build.0 = Debug|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Debug|x64.ActiveCfg = Debug|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Debug|x64.Build.0 = Debug|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Release|ARM64.ActiveCfg = Release|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Release|ARM64.Build.0 = Release|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Release|x64.ActiveCfg = Release|x64
+		{A4A3A123-E652-42D5-A5D4-0DD21D777297}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F786261-F541-49B5-92EF-D6E6E5709763}
+	EndGlobalSection
+EndGlobal
